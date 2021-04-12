@@ -120,20 +120,18 @@ function multiplicarArgumentos(a) {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
-// var result = ""; // inicia list
-  // var i;
+var result = 1; // inicia list
+
    // itera a través de arguments
-  // for (i = 1; i < arguments.length; i++) {
- //     result += arguments[i] * a;
- //  }
- //  var inter = parseInt(result,10);
- //  return inter;
-
- // var cantvalores= resultadosTest.length;
-  var total = a.reduce((a, b) => a * b, 0);
-  return total;
+if (arguments.length>0){   
+for (var i = 0; i < arguments.length; i++) {
+  result = arguments[i] * result;
+}  
+return result;
 }
-
+else {
+return 0;}
+}
 
 function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
