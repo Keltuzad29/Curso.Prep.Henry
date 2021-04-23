@@ -44,7 +44,11 @@ function forEach(array, cb) {
   //  for(i=0;i<array.length;i++){
   //  array[i];
  // }
-    array.forEach(cb)
+ array.forEach(cb)
+//var iteraccion=array.forEach(function(valor)){
+ // cb(valor);
+//})
+//return iteraccion;
 }
 
 function map(array, cb) {
